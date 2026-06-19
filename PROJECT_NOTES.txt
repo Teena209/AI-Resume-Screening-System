@@ -1,0 +1,35 @@
+PROJECT NOTES — AI Resume Screening System
+============================================
+
+Purpose:
+This project screens and ranks candidate resumes based on skill
+match and experience, producing a clear ranked report and selecting
+a top candidate.
+
+Files:
+- resume_screening.py   -> Main script. Scores and ranks candidates.
+- report.txt            -> Auto-generated output of the latest run.
+- automation_log.txt    -> Log of automated runs.
+- .github/workflows/run-screening.yml
+                         -> GitHub Actions workflow. Runs the script
+                            automatically on every push to main, and
+                            commits the updated report.txt back to
+                            the repo.
+
+How it works:
+1. Candidates are scored based on matching skills and experience.
+2. Scores are ranked highest to lowest.
+3. The top-ranked candidate is selected automatically.
+4. On every push to main, GitHub Actions re-runs the script and
+   updates report.txt with the latest results — no manual step
+   needed.
+
+Status:
+- Script: working, tested locally and via GitHub Actions.
+- Automation: fully working (see Actions tab — green checkmark).
+- Permissions: GitHub Actions has write access to commit reports.
+
+Next steps:
+- Add more candidates / refine scoring logic.
+- Add automated tests.
+- Possibly extend to read real resume files instead of hardcoded data.
