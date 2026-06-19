@@ -1,8 +1,12 @@
+====================================
+     AI RESUME SCREENING SYSTEM
+====================================
 
-Repository Verification Report
-=============================
-Date : 2026-06-18 14:26:03.690318
+===== SCREENING REPORT =====
 
-Status : SUCCESS
-All files validated.
-Repository synchronized.
+Rank 1: Sophia - Score 100
+Rank 2: John - Score 90
+Rank 3: David - Score 40
+Rank 4: Alex - Score 10
+
+Selected Candidate: Sophia
