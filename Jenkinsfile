@@ -10,13 +10,13 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-                bat 'pip install pandas numpy scikit-learn'
+               bat 'py -m pip install pandas numpy scikit-learn'
             }
         }
         stage('Run Resume Screening') {
             steps {
                 echo 'Running AI Resume Screening System...'
-                bat 'python resume_screening.py'
+                bat 'py resume_screening.py'
             }
         }
     }
