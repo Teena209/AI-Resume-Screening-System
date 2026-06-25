@@ -10,13 +10,13 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-               bat 'py -m pip install pandas numpy scikit-learn'
+           bat '"C:\\Users\\teena\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pip install pandas numpy scikit-learn'
             }
         }
         stage('Run Resume Screening') {
             steps {
                 echo 'Running AI Resume Screening System...'
-                bat 'py resume_screening.py'
+                bat '"C:\\Users\\teena\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" resume_screening.py'
             }
         }
     }
